@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DIVINE ACADEMY, Centre de Perfectionnement et de Développement des Compétences à Chagoua, N'Djamena.">
+  <meta name="theme-color" content="#078da0">
+  <title>DIVINE ACADEMY | Développez vos compétences</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="DIVINE ACADEMY, accueil">
+      <img src="logo.jpg" alt="Logo DIVINE ACADEMY" onerror="this.style.display='none'">
+      <span><strong>DIVINE ACADEMY</strong><small>Centre de Perfectionnement et de Développement des Compétences</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#formations">Formations</a>
+      <a href="#inscription">Préinscription</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">APPRENDRE · PRATIQUER · PROGRESSER</p>
+        <h1>Développez vos compétences.<br><span>Préparez votre avenir.</span></h1>
+        <p class="hero-text">Des formations pratiques pour renforcer vos capacités, favoriser votre insertion professionnelle et développer votre esprit entrepreneurial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#formations">Découvrir nos domaines</a>
+          <a class="button button-outline" href="#inscription">Demander une préinscription</a>
+        </div>
+        <p class="location-note">📍 Chagoua, N’Djamena, Tchad — près de l’hôtel ZENEBAL</p>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="mark-circle"><span>DA</span><b>THE EXCELLENCE</b><i>✦</i></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="apropos">
+      <div class="section-heading">
+        <p class="eyebrow">QUI SOMMES-NOUS ?</p>
+        <h2>Le potentiel devient compétence.</h2>
+      </div>
+      <p class="intro-copy">DIVINE ACADEMY est un centre de perfectionnement et de renforcement des capacités. Sa mission est de renforcer les compétences pratiques des jeunes, de favoriser l’insertion professionnelle, de développer l’esprit entrepreneurial et de révéler le potentiel individuel.</p>
+      <div class="pill-row"><span>Pratique</span><span>Compétences</span><span>Employabilité</span><span>Entrepreneuriat</span></div>
+    </section>
+
+    <section class="section courses" id="formations">
+      <div class="section-heading">
+        <p class="eyebrow">NOS DOMAINES</p>
+        <h2>Des compétences pour avancer</h2>
+        <p>Découvrez nos grands domaines de formation. Contactez l’administration pour connaître les cours ouverts, les horaires, les prérequis et les frais.</p>
+      </div>
+      <div class="course-grid">
+        <article class="course-card"><div class="course-icon">⌘</div><h3>Numérique et informatique</h3><p>Renforcement des compétences informatiques et numériques. Les cours précis sont à confirmer auprès du centre.</p></article>
+        <article class="course-card"><div class="course-icon">↗</div><h3>Gestion, entrepreneuriat et leadership</h3><p>Développer ses capacités de gestion et son esprit entrepreneurial selon les programmes proposés.</p></article>
+        <article class="course-card"><div class="course-icon">文</div><h3>Langues et communication</h3><p>Un domaine consacré aux langues et à la communication internationale. Les langues enseignées sont à confirmer.</p></article>
+        <article class="course-card"><div class="course-icon">⚙</div><h3>Métiers techniques et industriels</h3><p>Le règlement cite notamment l’électricité bâtiment, les panneaux solaires et la plomberie.</p></article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div><p class="eyebrow">VOTRE PROCHAINE ÉTAPE</p><h2>Prêt à développer vos compétences ?</h2><p>Envoyez une demande de préinscription. L’administration pourra vous communiquer les prochaines sessions et les conditions d’admission.</p></div>
+      <a class="button button-light" href="#inscription">Faire une demande</a>
+    </section>
+
+    <section class="section signup" id="inscription">
+      <div class="section-heading">
+        <p class="eyebrow">PRÉINSCRIPTION</p>
+        <h2>Parlons de votre projet de formation.</h2>
+        <p>Complétez les informations ci-dessous. Les champs marqués d’un astérisque sont obligatoires.</p>
+      </div>
+      <form id="signupForm">
+        <div class="form-grid">
+          <label>Nom et prénom(s) *<input name="nom" required autocomplete="name" placeholder="Votre nom complet"></label>
+          <label>Téléphone / WhatsApp *<input name="telephone" type="tel" required autocomplete="tel" placeholder="Votre numéro"></label>
+          <label>Adresse e-mail<input name="email" type="email" autocomplete="email" placeholder="vous@exemple.com"></label>
+          <label>Formation souhaitée *
+            <select name="formation" required>
+              <option value="">Choisir un domaine</option>
+              <option>Numérique et informatique</option>
+              <option>Gestion, entrepreneuriat et leadership</option>
+              <option>Langues et communication internationale</option>
+              <option>Métiers techniques et industriels</option>
+              <option>Je souhaite être conseillé(e)</option>
+            </select>
+          </label>
+          <label class="full">Votre message<textarea name="message" rows="4" placeholder="Votre niveau, vos questions ou vos disponibilités (facultatif)"></textarea></label>
+        </div>
+        <label class="consent"><input type="checkbox" required> J’accepte que DIVINE ACADEMY utilise ces informations pour répondre à ma demande. *</label>
+        <button class="button button-primary" type="submit">Préparer ma demande</button>
+        <p class="form-note" id="formNote" role="status">Prototype : le formulaire n’envoie pas encore les données. La réception des demandes sera activée après le choix d’un e-mail officiel ou d’un service de formulaire.</p>
+      </form>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">NOUS CONTACTER</p>
+        <h2>Entrons en contact</h2>
+        <p>Les coordonnées ci-dessous sont à compléter et à valider par la Direction avant publication.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item"><span>📍</span><div><h3>Adresse</h3><p>Chagoua, N’Djamena, Tchad<br>Près de l’hôtel ZENEBAL</p></div></div>
+        <div class="contact-item"><span>☎</span><div><h3>Téléphone</h3><p><a href="tel:+23563490765">+235 63 49 07 65</a></p></div></div>
+        <div class="contact-item"><span>◉</span><div><h3>WhatsApp</h3><p><a href="https://wa.me/23563490765" target="_blank" rel="noopener">Écrire sur WhatsApp : +235 63 49 07 65</a></p></div></div>
+        <div class="contact-item"><span>✉</span><div><h3>E-mail</h3><p><a href="mailto:madjireolivier@gmail.com">madjireolivier@gmail.com</a></p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>DIVINE ACADEMY</strong><p>Centre de Perfectionnement et de Développement des Compétences</p></div>
+    <p>© <span id="year"></span> DIVINE ACADEMY. Tous droits réservés.</p>
+    <p class="footer-note">Les informations relatives aux formations, aux frais et aux prochaines sessions doivent être confirmées par l’administration.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
